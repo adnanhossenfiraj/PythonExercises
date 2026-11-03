@@ -1,0 +1,383 @@
+Python শেখার ১০০টি Problem — একদম Beginner থেকে Professional প্রস্তুতি
+
+উদ্দেশ্য: এই ১০০টি সমস্যা ক্রমানুসারে সমাধান করলে Python-এর মৌলিক ধারণা,
+problem solving, data structures, files, OOP, APIs, database, testing
+এবং ছোট project তৈরির অনুশীলন হবে। শুধু উত্তর কপি না করে নিজে code লিখবে,
+test করবে, এবং code ব্যাখ্যা করতে পারবে।
+
+কীভাবে অনুশীলন করবে: ১. প্রতিটি সমস্যার জন্য আলাদা .py ফাইল বানাও অথবা topic
+অনুযায়ী ফোল্ডার রাখো। ২. প্রতিটি প্রোগ্রামে সঠিক input, ভুল input এবং edge
+case পরীক্ষা করো। ৩. সম্ভব হলে function ব্যবহার করো, পরিষ্কার variable name
+দাও, এবং code-এ অপ্রয়োজনীয় পুনরাবৃত্তি কমাও। ৪. ১–১০০ ক্রমানুসারে করো। কোনো
+সমস্যা কঠিন হলে আগে ছোট উদাহরণ দিয়ে চেষ্টা করো। ৫. Professional হওয়ার জন্য
+শুধু Python syntax নয়—Git, testing, SQL, debugging, documentation এবং
+project portfolio-ও শিখতে হবে।
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ পর্ব ১: একদম শুরু — print, input,
+variables, data types ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Problem 01 — Hello, Python স্ক্রিনে “Hello, Python!” এবং নিজের পরিচয়
+একাধিক লাইনে print করো।
+
+Problem 02 — নিজের পরিচয় ব্যবহারকারীর নাম, বয়স ও শহর input নিয়ে সুন্দর
+বাক্যে দেখাও।
+
+Problem 03 — দুই সংখ্যার যোগ দুটি সংখ্যা input নিয়ে যোগফল দেখাও। input-কে
+সঠিক numeric type-এ convert করো।
+
+Problem 04 — চারটি গাণিতিক কাজ দুটি সংখ্যার যোগ, বিয়োগ, গুণ ও ভাগফল দেখাও।
+শূন্য দিয়ে ভাগের বিষয়টি সামলাও।
+
+Problem 05 — আয়তক্ষেত্রের হিসাব দৈর্ঘ্য ও প্রস্থ input নিয়ে ক্ষেত্রফল এবং
+পরিসীমা বের করো।
+
+Problem 06 — বৃত্তের হিসাব ব্যাসার্ধ input নিয়ে বৃত্তের ক্ষেত্রফল ও পরিধি বের
+করো।
+
+Problem 07 — Celsius থেকে Fahrenheit তাপমাত্রা Celsius-এ input নিয়ে
+Fahrenheit-এ রূপান্তর করো।
+
+Problem 08 — সেকেন্ডকে সময়ে রূপান্তর মোট সেকেন্ড input নিয়ে কত ঘণ্টা, মিনিট ও
+সেকেন্ড তা দেখাও।
+
+Problem 09 — অদলবদল দুটি variable-এর মান তৃতীয় variable ব্যবহার করে এবং পরে
+Python-এর tuple unpacking দিয়ে অদলবদল করো।
+
+Problem 10 — সাধারণ বিল পণ্যের দাম ও পরিমাণ input নিয়ে মোট দাম, discount
+এবং চূড়ান্ত বিল বের করো।
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ পর্ব ২: Conditions — if, elif, else,
+Boolean ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Problem 11 — জোড় না বিজোড় একটি integer জোড় নাকি বিজোড় তা নির্ধারণ করো।
+
+Problem 12 — ধনাত্মক, ঋণাত্মক নাকি শূন্য একটি সংখ্যা পরীক্ষা করে তিনটির মধ্যে
+সঠিক ফল দেখাও।
+
+Problem 13 — তিন সংখ্যার মধ্যে বড় তিনটি সংখ্যা input নিয়ে সবচেয়ে বড়টি বের
+করো। built-in max() ছাড়াও একবার চেষ্টা করো।
+
+Problem 14 — Leap year একটি বছর leap year কি না Gregorian calendar-এর
+নিয়ম অনুযায়ী নির্ধারণ করো।
+
+Problem 15 — পরীক্ষার Grade নম্বর input নিয়ে নির্ধারিত scale অনুযায়ী grade
+দেখাও; ০–১০০-এর বাইরে input প্রত্যাখ্যান করো।
+
+Problem 16 — বয়স অনুযায়ী শ্রেণি বয়স অনুযায়ী শিশু, কিশোর, প্রাপ্তবয়স্ক বা প্রবীণ
+শ্রেণি দেখাও। সীমার মানগুলো পরিষ্কারভাবে নির্ধারণ করো।
+
+Problem 17 — তিন বাহুতে ত্রিভুজ তিনটি দৈর্ঘ্য দিয়ে ত্রিভুজ গঠন সম্ভব কি না
+পরীক্ষা করো; সম্ভব হলে সমবাহু, সমদ্বিবাহু বা বিষমবাহু চিহ্নিত করো।
+
+Problem 18 — Simple calculator ব্যবহারকারীর বেছে নেওয়া operator (+, -, *,
+/) অনুযায়ী হিসাব করো। অবৈধ operator ও division by zero সামলাও।
+
+Problem 19 — Login যাচাই একটি demo username ও password-এর সঙ্গে input
+তুলনা করে login success/failure দেখাও। বাস্তব password কখনো code-এ
+hardcode করার ঝুঁকি নোট করো।
+
+Problem 20 — তিনটি শর্ত একসঙ্গে একটি সংখ্যা ৩ ও ৫ উভয় দিয়ে বিভাজ্য, শুধু একটির
+দিয়ে বিভাজ্য, নাকি কোনোটির দিয়েই নয় তা দেখাও।
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ পর্ব ৩: Loops — for, while, range,
+break, continue ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Problem 21 — ১ থেকে N N input নিয়ে ১ থেকে N পর্যন্ত সব সংখ্যা print করো।
+
+Problem 22 — যোগফল N input নিয়ে ১ থেকে N পর্যন্ত সংখ্যার যোগফল loop দিয়ে
+বের করো।
+
+Problem 23 — Multiplication table একটি সংখ্যার ১ থেকে ১০ পর্যন্ত নামতা
+দেখাও।
+
+Problem 24 — Factorial একটি non-negative integer-এর factorial বের করো।
+০! = ১ নিশ্চিত করো।
+
+Problem 25 — Digit count একটি integer-এ মোট কয়টি digit আছে তা বের করো;
+শূন্যের ক্ষেত্রটিও পরীক্ষা করো।
+
+Problem 26 — অঙ্কগুলোর যোগফল একটি integer-এর digit-গুলোর যোগফল বের করো।
+
+Problem 27 — সংখ্যা উল্টানো একটি integer-এর digit উল্টে নতুন সংখ্যা তৈরি করো।
+leading zero হারিয়ে যাওয়ার বিষয়টি বিবেচনা করো।
+
+Problem 28 — Palindrome number একটি সংখ্যা সামনে ও পেছন থেকে একই কি না
+পরীক্ষা করো।
+
+Problem 29 — Prime number একটি সংখ্যা prime কি না নির্ধারণ করো। ১ ও ঋণাত্মক
+সংখ্যার edge case সামলাও।
+
+Problem 30 — Fibonacci series Nটি Fibonacci সংখ্যা print করো। প্রথম কয়েকটি
+মান যাচাই করো।
+
+Problem 31 — সব divisor একটি সংখ্যার সব ধনাত্মক divisor বের করো।
+
+Problem 32 — GCD ও LCM দুটি integer-এর GCD এবং LCM বের করো; সম্ভব হলে
+Euclidean algorithm ব্যবহার করো।
+
+Problem 33 — Pattern printing N input নিয়ে তারকা (*) দিয়ে right
+triangle, pyramid ও উল্টো triangle pattern তৈরি করো।
+
+Problem 34 — Guess the number কম্পিউটার একটি নির্দিষ্ট সংখ্যা রাখবে;
+ব্যবহারকারী অনুমান করবে এবং “বড়/ছোট” hint পাবে। চেষ্টা সংখ্যা গণনা করো।
+
+Problem 35 — Input validation loop ব্যবহারকারী সঠিক range-এর সংখ্যা না
+দেওয়া পর্যন্ত input চাইতে থাকো। ভুল input-এ crash যেন না হয়।
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ পর্ব ৪: Strings
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Problem 36 — String analysis একটি বাক্যে character, character বাদে space,
+word এবং line-এর সংখ্যা বের করো।
+
+Problem 37 — Vowel counter ইংরেজি বাক্যে vowel কতটি আছে গণনা করো;
+uppercase ও lowercase উভয় সামলাও।
+
+Problem 38 — শব্দ উল্টানো একটি string-এর character উল্টাও এবং আলাদাভাবে
+বাক্যের word-এর ক্রম উল্টাও।
+
+Problem 39 — Palindrome string space ও punctuation উপেক্ষা করে একটি
+শব্দ/বাক্য palindrome কি না পরীক্ষা করো।
+
+Problem 40 — Word frequency একটি বাক্যে প্রতিটি শব্দ কতবার এসেছে তা
+dictionary-তে সংরক্ষণ করে দেখাও।
+
+Problem 41 — Email-এর সাধারণ validation একটি email-এ basic format-এর কিছু
+শর্ত আছে কি না পরীক্ষা করো। এটিকে সম্পূর্ণ RFC validation বলে দাবি করবে না।
+
+Problem 42 — Password strength checker দৈর্ঘ্য, uppercase, lowercase,
+digit ও special character-এর ভিত্তিতে password strength-এর সাধারণ মূল্যায়ন
+করো।
+
+Problem 43 — Title Case একটি বাক্যের প্রতিটি শব্দের প্রথম অক্ষর বড় করো;
+apostrophe বা hyphen থাকা শব্দের আচরণও পরীক্ষা করো।
+
+Problem 44 — Duplicate character একটি string-এ কোন character একাধিকবার
+এসেছে এবং কতবার এসেছে তা দেখাও।
+
+Problem 45 — Caesar cipher একটি ইংরেজি string-কে নির্দিষ্ট shift দিয়ে
+encrypt ও decrypt করো; punctuation ও case বজায় রাখার চেষ্টা করো।
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ পর্ব ৫: Collections — list, tuple,
+set, dictionary ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Problem 46 — List statistics সংখ্যার একটি list থেকে sum, average, minimum
+ও maximum বের করো; খালি list সামলাও।
+
+Problem 47 — দ্বিতীয় বৃহত্তম একটি list থেকে দ্বিতীয় বৃহত্তম distinct সংখ্যা বের
+করো। পর্যাপ্ত distinct সংখ্যা না থাকলে পরিষ্কার বার্তা দাও।
+
+Problem 48 — Duplicate বাদ একটি list থেকে duplicate বাদ দাও, কিন্তু
+প্রথমবারের ক্রম বজায় রাখো।
+
+Problem 49 — List rotate একটি list-কে K ধাপ ডানে বা বামে rotate করো; K
+list-এর দৈর্ঘ্যের চেয়ে বড় হলেও কাজ করতে হবে।
+
+Problem 50 — Merge ও sort দুটি sorted list-কে নতুন sorted list-এ merge
+করো।
+
+Problem 51 — Matrix যোগ দুটি সমান আকারের 2D list/matrix যোগ করো; আকার না
+মিললে error দেখাও।
+
+Problem 52 — Matrix transpose একটি matrix-এর transpose বের করো।
+rectangular matrix-ও পরীক্ষা করো।
+
+Problem 53 — Set operations দুটি set-এর union, intersection, difference ও
+symmetric difference দেখাও।
+
+Problem 54 — Student marks dictionary শিক্ষার্থীর নাম ও নম্বর dictionary-তে
+রাখো; নাম খোঁজা, নম্বর update এবং class average বের করার ব্যবস্থা করো।
+
+Problem 55 — Inventory system পণ্যের নাম, দাম ও stock quantity
+dictionary-তে রাখো; পণ্য যোগ, বিক্রি, stock update এবং কম stock-এর সতর্কতা
+দেখাও।
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ পর্ব ৬: Functions, scope,
+comprehensions, modules ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Problem 56 — Reusable calculator functions যোগ, বিয়োগ, গুণ ও ভাগের জন্য
+আলাদা function তৈরি করো এবং সেগুলো একটি menu থেকে ব্যবহার করো।
+
+Problem 57 — Function arguments একটি function তৈরি করো যা positional,
+keyword এবং default argument ব্যবহার করে ব্যক্তির পরিচয় তৈরি করে।
+
+Problem 58 — *args ও **kwargs একটি function লেখো যা যেকোনো সংখ্যক numeric
+argument-এর যোগফল এবং অতিরিক্ত keyword তথ্য গ্রহণ করতে পারে।
+
+Problem 59 — Recursion Recursion দিয়ে factorial এবং Fibonacci বের করো।
+recursion-এর সীমাবদ্ধতা লিখে iterative version-এর সঙ্গে তুলনা করো।
+
+Problem 60 — Lambda ও sorting Dictionary-র list-কে নির্দিষ্ট key অনুযায়ী
+lambda বা key function ব্যবহার করে sort করো।
+
+Problem 61 — List comprehension ১–১০০-এর মধ্যে ৩ ও ৫ উভয় দিয়ে বিভাজ্য
+সংখ্যার list comprehension দিয়ে list বানাও।
+
+Problem 62 — Dictionary comprehension একটি list-এর প্রতিটি সংখ্যার
+square-কে key/value হিসেবে dictionary-তে তৈরি করো।
+
+Problem 63 — নিজের module গণিতের কয়েকটি helper function একটি module-এ
+রাখো এবং অন্য Python file থেকে import করো।
+
+Problem 64 — Main guard একটি script তৈরি করো যাতে import করলে শুধু
+function পাওয়া যায়, কিন্তু সরাসরি চালালে demo চলে; if name == “main”
+ব্যবহার করো।
+
+Problem 65 — Type hints ও docstrings আগের একটি program-কে type hints,
+পরিষ্কার docstring এবং meaningful function name দিয়ে সাজাও।
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ পর্ব ৭: Files, errors, JSON, dates
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Problem 66 — Text file read/write ব্যবহারকারীর লেখা একটি note text file-এ
+save করো এবং পরে পড়ে দেখাও। file encoding নির্দিষ্ট করো।
+
+Problem 67 — Word/line counter একটি text file থেকে line, word ও
+character count করো; file না থাকলে উপযুক্ত বার্তা দাও।
+
+Problem 68 — CSV student report CSV file থেকে student marks পড়ে average,
+highest score এবং pass/fail report তৈরি করো।
+
+Problem 69 — JSON contacts নাম, phone ও email-সহ contact list JSON
+file-এ save/load করার program বানাও।
+
+Problem 70 — Exception handling সংখ্যা চাওয়া, division এবং file read-এ
+সম্ভাব্য error ধরো। খুব সাধারণভাবে সব exception চেপে ফেলবে না।
+
+Problem 71 — Custom exception অবৈধ bank withdrawal বা অপর্যাপ্ত balance-এর
+জন্য নিজের exception class তৈরি করো।
+
+Problem 72 — Log file একটি program-এর ঘটনা, warning ও error timestamp-সহ
+logging module দিয়ে log file-এ রাখো।
+
+Problem 73 — Date calculator জন্মতারিখ input নিয়ে বয়স আনুমানিক
+বছর/মাস/দিনে হিসাব করো; leap day-এর edge case বিবেচনা করো।
+
+Problem 74 — File organizer একটি নির্দিষ্ট folder-এর file extension দেখে
+আলাদা subfolder-এ সাজানোর script তৈরি করো। আগে dry-run mode রাখো যাতে
+ভুলে file সরানো না হয়।
+
+Problem 75 — Backup utility একটি folder-এর file অন্য folder-এ backup করো;
+একই নামের file, folder না থাকা এবং error-এর বিষয়গুলো সামলাও।
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ পর্ব ৮: Object-Oriented Programming
+(OOP) ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Problem 76 — Student class Student class তৈরি করো; name, ID ও marks
+থাকবে এবং average ও grade বের করার method থাকবে।
+
+Problem 77 — Bank account BankAccount class তৈরি করো; deposit, withdraw
+ও balance check থাকবে। অবৈধ amount গ্রহণ করবে না।
+
+Problem 78 — Inheritance Person থেকে Student ও Teacher class তৈরি করো;
+shared attribute parent class-এ রাখো এবং আলাদা method যোগ করো।
+
+Problem 79 — Encapsulation ও property একটি Product class তৈরি করো যার
+price negative করা যাবে না; property বা validation method ব্যবহার করো।
+
+Problem 80 — Polymorphism ভিন্ন ভিন্ন shape class-এর area() method লিখে
+একই interface-এর মাধ্যমে area বের করো।
+
+Problem 81 — Composition Library ও Book class তৈরি করো। বই যোগ, ধার
+দেওয়া ও ফেরত নেওয়ার ব্যবস্থা করো।
+
+Problem 82 — Special methods একটি Vector class তৈরি করো যাতে str, repr
+এবং দুই vector-এর যোগের জন্য add কাজ করে।
+
+Problem 83 — Dataclass একটি Employee record dataclass দিয়ে তৈরি করো এবং
+sorting ও equality পরীক্ষা করো।
+
+Problem 84 — Iterator/generator একটি generator তৈরি করো যা বড় range থেকে
+একবারে একটি করে prime number দেয়, সবগুলো একসঙ্গে memory-তে না রেখে।
+
+Problem 85 — Context manager একটি custom context manager তৈরি করো বা
+contextlib ব্যবহার করো, যা কোনো resource ব্যবহার শেষে পরিষ্কারভাবে বন্ধ করে।
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ পর্ব ৯: Algorithms, testing,
+debugging, professional tools ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Problem 86 — Linear ও binary search একটি list-এ linear search এবং sorted
+list-এ binary search implement করো; তুলনা ও test করো।
+
+Problem 87 — Sorting algorithm Bubble sort বা insertion sort implement
+করো এবং Python-এর built-in sorted() ফলাফলের সঙ্গে মিলিয়ে দেখো।
+
+Problem 88 — Big-O তুলনা একটি list-এ duplicate খোঁজার nested-loop solution
+ও set-ভিত্তিক solution লেখো; সময় জটিলতা কীভাবে বদলায় ব্যাখ্যা করো।
+
+Problem 89 — Unit tests আগের calculator বা BankAccount-এর জন্য unittest
+বা pytest দিয়ে success case, failure case ও edge case-এর test লেখো।
+
+Problem 90 — Debugging ইচ্ছাকৃতভাবে bug-যুক্ত একটি program ঠিক করো। debugger
+বা print/logging দিয়ে bug-এর কারণ খুঁজে README-তে লিখো।
+
+Problem 91 — Git workflow নিজের code-এর জন্য Git repository তৈরি করো;
+meaningful commit, branch, merge এবং README update অনুশীলন করো।
+
+Problem 92 — Virtual environment ও dependencies একটি project-এর জন্য
+virtual environment তৈরি করো, dependency install করো এবং
+requirements.txt বা উপযুক্ত dependency file রাখো।
+
+Problem 93 — Code quality একটি পুরোনো script-এ PEP 8 অনুসরণ করো,
+formatter/linter ব্যবহার করো, এবং code-কে ছোট reusable function-এ ভাগ
+করো।
+
+Problem 94 — Command-line application argparse ব্যবহার করে command-line
+tool বানাও যাতে user argument, help message এবং invalid argument
+handling থাকে।
+
+Problem 95 — Environment variables ও secrets একটি demo application-এ
+configuration environment variable থেকে পড়ো। API key/password source
+code বা Git repository-তে রাখবে না।
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ পর্ব ১০: Database, API, automation ও
+portfolio projects ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Problem 96 — SQLite CRUD SQLite database-এ task বা contact রাখো। create,
+read, update, delete (CRUD) অপারেশন এবং parameterized query ব্যবহার করো।
+
+Problem 97 — REST API client একটি public test API-তে HTTP request পাঠাও;
+status code, timeout, JSON response ও network error সামলাও। API-এর শর্ত
+মেনে ব্যবহার করো।
+
+Problem 98 — Web API তৈরি Flask বা FastAPI-এর যেকোনো একটি দিয়ে ছোট REST
+API তৈরি করো; অন্তত GET ও POST endpoint, input validation এবং পরিষ্কার
+error response রাখো।
+
+Problem 99 — Automated report project CSV/JSON থেকে data পড়ে হিসাব করো,
+report তৈরি করো এবং log/test যোগ করো। README-তে setup ও run করার নিয়ম
+লিখো।
+
+Problem 100 — Final portfolio project নিজের পছন্দের একটি সম্পূর্ণ project
+তৈরি করো—যেমন expense tracker, inventory manager, library system, study
+planner বা personal finance tracker। এতে থাকতে হবে: - পরিষ্কার folder
+structure ও modular code - function/class যেখানে প্রয়োজন - file বা
+database storage - input validation ও error handling - automated tests -
+logging ও configuration - Git history - README: problem, features,
+setup, usage, screenshots/sample output - অন্তত ৫টি বাস্তবসম্মত test
+scenario - কোন সীমাবদ্ধতা আছে এবং পরবর্তী version-এ কী যোগ করবে তার নোট
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ এই ১০০টি সমস্যার পর কী শিখবে?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Python-এর পরে নিজের লক্ষ্য অনুযায়ী পথ বেছে নাও:
+
+১. Backend/Web development: HTTP, HTML/CSS-এর বেসিক,
+Flask/FastAPI/Django, REST API, authentication, SQL, deployment ও
+security।
+
+২. Data analysis: NumPy, pandas, Jupyter, data cleaning, visualization,
+statistics এবং SQL।
+
+৩. Automation: pathlib, shutil, subprocess, scheduling, API integration,
+browser automation-এর উপযুক্ত tools এবং safe error handling।
+
+৪. AI/Machine Learning: গণিত ও statistics-এর ভিত্তি, NumPy/pandas,
+scikit-learn, model evaluation এবং data leakage সম্পর্কে ধারণা।
+
+Professional প্রস্তুতির জন্য মনে রাখবে: - শুধু tutorial দেখা নয়—নিজে problem
+solve করো। - অন্তত ৩–৫টি ভালোভাবে শেষ করা project GitHub-এ রাখো। - অন্যের
+code পড়তে, bug খুঁজতে এবং code explain করতে শিখো। - testing, Git, SQL,
+command line, documentation ও basic security বাদ দিও না। -
+“Professional” হওয়ার কোনো নির্দিষ্ট ১০০-সমস্যার নিশ্চয়তা নেই; নিয়মিত অনুশীলন,
+feedback এবং বাস্তব project-ই দক্ষতা গড়ে তোলে।
